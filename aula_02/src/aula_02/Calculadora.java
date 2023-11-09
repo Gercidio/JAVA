@@ -18,7 +18,17 @@ public class Calculadora {
 		System.out.println("Soma: " + (numero1+numero2));
 		System.out.println("Subtração: " + (numero1-numero2));
 		System.out.println("Multiplicação: " + (numero1*numero2));
-		System.out.println("Divisão: " + (numero1/numero2));
+		
+		/*condição para realizar a divisão.
+		 * uso das {} só é obrigatório para mais de uma ação no ifelse/
+		 */
+		if(numero2 > 0) {
+			System.out.println("Divisão: " + (numero1/numero2));
+			System.out.println("A divisão funcional!");
+		}else {
+			System.out.println("Não existe divisão por zero!");
+		}
+		
 		System.out.println("Módulo do numero 1 (Resto da divisão: " + (numero1%2));
 		System.out.println("Módulo do numero 2 (Resto da divisão: " + (numero2%2));
 		
