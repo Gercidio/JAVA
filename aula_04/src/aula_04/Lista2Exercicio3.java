@@ -13,14 +13,14 @@ public class Lista2Exercicio3 {
 		// total de pessoas cuja idade seja maior que 50 anos
 		// A leitura dos dados deve ser finalizada ao digitar uma idade negativa.
 		
-		while(idade >= 0) {
+		while(idade < 0) {
 			System.out.println("Digite a sua idade: ");
 			idade = leia.nextInt();
 			 
 			 if (idade < 21) {
 				 menor21 ++;
 				 
-			 } else if (maior50 >= 50) {
+			 } else if (maior50 > 50) {
 				 maior50 ++;
 			 }
 		}
