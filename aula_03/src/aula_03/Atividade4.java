@@ -9,44 +9,47 @@ public class Atividade4 {
 		
 		String palavra1, palavra2, palavra3;
 		
+		//entrada de dados
+		
 		System.out.println("Digite a primeira palavra: ");
-		Leia.skip("\\R");
 		palavra1 = Leia.nextLine();
 		System.out.println("Digite a segunda palavra: ");
 		palavra2 = Leia.nextLine();
 		System.out.println("Digite a terceira palavra: ");
 		palavra3 = Leia.nextLine();
-
-		if(palavra1.equalsIgnoreCase("vertebrado")) {
 		
+		//equalsignorecase para comparar as strings ignorando as
+		
+		if (palavra1.equalsIgnoreCase("Vertebrado")) {
 			
-			if(palavra3.equalsIgnoreCase("carnívoro")) {
-				if(palavra3.equalsIgnoreCase("águia")) {
-			}else {
-				System.out.println("pomba");
-			}
-				
-			}else {
-				if(palavra3.equalsIgnoreCase("herbívoro")) {
-					System.out.println("vaca");
-				}else {
-					System.out.println("homem");
-				}
-			}
+		if(palavra2.equalsIgnoreCase("Ave")) {
+		if(palavra3.equalsIgnoreCase("Carnivoro")) {
+			System.out.println("Águia");
 		}else {
-			
-			if(palavra2.equalsIgnoreCase("inseto")) {
-				if(palavra3.equalsIgnoreCase("hematofago")) {
-					System.out.println("pulga");
-				}else {
-					System.out.println("lagarta");
-				}
-					
-			}
-		} else {
-			
+			System.out.println("Pomba"); //condições por combinação de palavras, seg resultado é a sobra das combinações delimitadas.
 		}
+	}else {
+		if(palavra3.equalsIgnoreCase("Herbivoro")) {
+			System.out.println("Vaca");
+		}else {
+			System.out.println(("Homem"));
 		}
 	}
-
+		}else {
+			
+			if(palavra2.equalsIgnoreCase("Inseto")) {
+				if(palavra3.equalsIgnoreCase("Hematofago")) {
+					System.out.println("Pulga");
+				}else {
+					System.out.println("Lagarta");
+				}
+			}else {
+				if(palavra3.equalsIgnoreCase("Onivoro")) {
+					System.out.println("Minhoca");
+				}else {
+					System.out.println("Sanguessuga");
+				}
+			}
+		}
+}
 }
