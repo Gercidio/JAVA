@@ -8,18 +8,19 @@ public class Ex02Atv08 {
 	public static void main(String[] args) {
 
 		Stack<String> pilha = new Stack<String>();
-
+		int opcao;
 
 		while(true) {
+			System.out.println("********************************************");
 			System.out.println("Menu: ");
 			System.out.println("1: Adicionar um novo livro na pilha: ");
 			System.out.println("2: Listar todos os livros da Pilha: ");
 			System.out.println("3: Retirar um livro da pilha");
 			System.out.println("0: Sair do menu.");
+			System.out.println("\n********************************************");
 			
-			int opcao = leia.nextInt();
-		
-		
+			 opcao = leia.nextInt();
+				
 			switch(opcao) {
 			case 1: System.out.println("Digite o nome: ");
 				pilha.add(leia.nextLine());

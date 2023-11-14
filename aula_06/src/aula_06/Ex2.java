@@ -10,22 +10,28 @@ public class Ex2 {
 
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
 		
-		for (int i = 0; i < 10; i++) {
+		int numero;
+		
+		for (int i = 1; i < 10; i++) {
             numeros.add(i);
         }
 		
 		System.out.println("Digite o número que você deseja encontrar: ");
-		int numero = leia.nextInt();
+		 numero = leia.nextInt();
 		
-		boolean encontrado = numeros.contains(numero);
+		//boolean encontrado = numeros.contains(numero);
 		
-		if(encontrado) {
-			int posicao = numeros.indexOf(numero);
-			System.out.println("O número " + numero + " foi encontrado na posição " + posicao);
-		}else {
+		//if(encontrado) {
+		//	int posicao = numeros.indexOf(numero);
+		//	System.out.println("O número " + numero + " foi encontrado na posição " + posicao);
+	//	}else {
+			//System.out.println("O número " + numero + " não foi encontrado!");
+		//}
+		 
+		if(numeros.contains(numero))
+			System.out.println("O número " + numero + " foi encontrado na posição: " + numeros.indexOf(numero));
+		else
 			System.out.println("O número " + numero + " não foi encontrado!");
-		}
-			
 	}
 
 }
