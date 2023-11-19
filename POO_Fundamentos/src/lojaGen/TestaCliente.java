@@ -1,5 +1,7 @@
 package lojaGen;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import lojaGen.Cliente;
 
@@ -8,7 +10,6 @@ public class TestaCliente {
 	public static void main(String[] args) {
 
 		
-		
 		Cliente c1 = new Cliente("Maria Leiliane", 30, 1, 2, 9.5f);
 		System.out.println("Dados do cliente 1: ");
 		c1.visualizar();
@@ -16,6 +17,8 @@ public class TestaCliente {
 		System.out.println("Dados do cliente 1: ");
 		c2.visualizar();
 		
+
+
 
 
 	}
