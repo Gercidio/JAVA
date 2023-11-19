@@ -10,7 +10,7 @@ public class Cliente {
 	 private float notas;
 	 
 	 
-	public Cliente(String nome, int idade, int escolaridade, int linguagem, float saldo, float notas) {
+	public Cliente(String nome, int idade, int escolaridade, int linguagem, float notas) {
 		this.nome = nome;
 		this.idade = idade;
 		this.escolaridade = escolaridade;
@@ -64,8 +64,8 @@ public class Cliente {
 	}
 
 
-	public void setSaldo(float saldo) {
-		this.notas = saldo;
+	public void setSaldo(float notas) {
+		this.notas = notas;
 	}
 		 
 	//métodos auxiliares
@@ -73,7 +73,7 @@ public class Cliente {
 		System.out.println("------------------------------------------");
 		System.out.println("Nome: " + nome);
 		System.out.println("Idade: " + idade);
-		System.out.println("Escolaridade" + escolaridade);
+		System.out.println("Escolaridade: " + escolaridade);
 		System.out.println("Linguagem: " + linguagem);
 		System.out.println("Notas: " + notas);
 		System.out.println("------------------------------------------");
