@@ -10,15 +10,15 @@ public class Cliente {
 	 private int idade;
 	 private int escolaridade; //1 - EM, 2 - Superior incompleto, 3 - superior com.
 	 private int linguagem; // 1 - java, 2 - JS, 3 - Python
-	 private float notas;
+	 private float saldo;
 	 
 	 
-	public Cliente(String nome, int idade, int escolaridade, int linguagem, float notas) {
+	public Cliente(String nome, int idade, int escolaridade, int linguagem, float saldo) {
 		this.nome = nome;
 		this.idade = idade;
 		this.escolaridade = escolaridade;
 		this.linguagem = linguagem;
-		this.notas = notas;
+		this.saldo = saldo;
 	}
 
 
@@ -63,12 +63,12 @@ public class Cliente {
 
 
 	public float getSaldo() {
-		return notas;
+		return saldo;
 	}
 
 
-	public void setSaldo(float notas) {
-		this.notas = notas;
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
 	}
 		 
 	//métodos auxiliares
@@ -78,7 +78,7 @@ public class Cliente {
 		System.out.println("Idade: " + this.idade);
 		System.out.println("Escolaridade: " + escolaridadeToString(this.escolaridade));
 		System.out.println("Linguagem: " + linguagemToString(this.linguagem));
-		System.out.println("Notas: " + this.notas);
+		System.out.println("Saldo da sua carteira digital: " + this.saldo);
 		System.out.println("------------------------------------------");
 
 		
